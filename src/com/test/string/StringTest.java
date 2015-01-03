@@ -14,9 +14,9 @@ public class StringTest {
         Date dt2 = new SimpleDateFormat("yyyyMM").parse("201405");
  
 		for(;dt1.before(dt2);){
-			Calendar calendar = Calendar.getInstance();//ÈÕÀú¶ÔÏó
-		        calendar.setTime(dt1);//ÉèÖÃµ±Ç°ÈÕÆÚ
-		        calendar.add(Calendar.MONTH, 1);//ÔÂ·Ý¼Ó1
+			Calendar calendar = Calendar.getInstance();//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		        calendar.setTime(dt1);//ï¿½ï¿½ï¿½Ãµï¿½Ç°ï¿½ï¿½ï¿½ï¿½
+		        calendar.add(Calendar.MONTH, 1);//ï¿½Â·Ý¼ï¿½1
 		        dt1 = calendar.getTime();
 			String tempMonth = df.format(dt1);
 			System.out.println(tempMonth);
@@ -35,7 +35,10 @@ public class StringTest {
 		}
 		//System.out.println(201311/100);
 		//System.out.println(201311%100);
-		
+		int []arr = {1,3,4,5,6,6,67,7};
+		for(int i:arr){
+			
+		}
 	}
 	public static String addMonthStr(int temp){
 		String tempValue = (String) ((1<temp&&temp<9)?"0"+temp:temp);
